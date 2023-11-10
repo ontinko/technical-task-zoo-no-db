@@ -55,7 +55,11 @@ ANIMALS = [
   }
 ].freeze
 
-PERMITTED_KEYS = %i[species age sex].freeze
+KEY_TYPES = {
+  species: String,
+  age: Integer,
+  sex: String
+}.freeze
 
 class Animal
   attr_reader :result
@@ -84,12 +88,12 @@ class Animal
     case name
     when /_less_than$/
       attr_name = name.to_s.sub(/_less_than$/, '').to_sym
-      super unless PERMITTED_KEYS.include?(attr_name)
+      super unless KEY_TYPES[attr_name] == Integer
       @result = @result.select { |a| a[attr_name] < args[0] }
       self
     when /_greater_than$/
       attr_name = name.to_s.sub(/_greater_than$/, '').to_sym
-      super unless PERMITTED_KEYS.include?(attr_name)
+      super unless KEY_TYPES[attr_name] == Integer
       @result = @result.select { |a| a[attr_name] > args[0] }
       self
     when /ies$/
