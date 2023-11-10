@@ -74,6 +74,10 @@ class Animal
     @result = ANIMALS
   end
 
+  def all
+    self
+  end
+
   def males
     @result = @result.select { |a| a[:sex] == 'male' }
     self
