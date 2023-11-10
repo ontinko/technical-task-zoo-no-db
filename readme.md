@@ -23,4 +23,4 @@ Upon executing the command, you will be presented with default `pry` prompt.
 
 ## Screenshots
 
-![image](https://github.com/ontinko/technical-task-zoo-no-db/assets/116831568/3628bfbe-5967-427f-8a8b-1ef7fee2677e)
+![image](https://github.com/ontinko/technical-task-zoo-no-db/assets/116831568/566888e7-4d0f-474a-880f-c19382b1a41a)
