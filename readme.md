@@ -21,3 +21,6 @@ ruby main.rb
 Upon executing the command, you will be presented with default `pry` prompt.
 `Animal` class is accessible and has all the methods needed
 
+## Screenshots
+
+![image](https://github.com/ontinko/technical-task-zoo-no-db/assets/116831568/3628bfbe-5967-427f-8a8b-1ef7fee2677e)
